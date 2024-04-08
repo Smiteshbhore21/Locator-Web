@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChargeUp India</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="resultBlocks.css">
+</head>
+
+<body>
+  <div class="container">
+    <header id="header">
+      <h1>ChargeUP India</h1>
+    </header>
+
+    <nav id="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+      <button id="login-button">Login</button>
+    </nav>
+
+    <main class="content">
+      <section id="img1">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="Photos/ev1.jpg" style="width:100%">
+            <div class="text">Experience the future of mobility.</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="Photos/ev2.jpg" style="width:100%">
+            <div class="text">Sustainable solutions for a greener tomorrow.</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="Photos/ev3.jpg" style="width:100%">
+            <div class="text">Join the ChargeUp India revolution.</div>
+          </div>
+
+          <script src="script1.js"></script>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </section>
+
+      <section id="form">
+        <h2>Find Your Charging Station</h2>
+        <form action="form.php" method="post">
+          <label for="country">Country:</label><br>
+          <input type="text" id="country" name="country" required><br>
+          <label for="state">State:</label><br>
+          <input type="text" id="State" name="State" required><br>
+          <label for="city">City:</label><br>
+          <input type="text" id="city" name="city" required><br>
+          <input type="submit" value="Search">
+        </form>
+      </section>
+      <div id="blur-overlay"></div>
+
+        <div id="login-form" class="hidden">
+          <div class="main">  	
+            <input type="checkbox" id="chk" aria-hidden="true">
+            <div class="login">
+              <form class="form">
+                <label for="chk" aria-hidden="true">Log in</label>
+                <input class="input" type="email" name="email" placeholder="Email" required="">
+                <input class="input" type="password" name="pswd" placeholder="Password" required="">
+                <button>Log in</button>
+              </form>
+            </div>
+      
+            <div class="register">
+              <form class="form">
+                <label for="chk" aria-hidden="true">Register</label>
+                <input class="input" type="text" name="txt" placeholder="Username" required="">
+                <input class="input" type="email" name="email" placeholder="Email" required="">
+                <input class="input" type="password" name="pswd" placeholder="Password" required="">
+                <button>Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      <script src="script.js"></script>
+      <script src="script2.js"></script>
+
+      <!--Result Block-->
+    </main>
+    <div class="card">
+      <div class="card-info">
+        <p class="title">Narhe Charge</p>
+        <div class="image"></div>
+        <div class="content">
+      
+          <p class="desc">
+            24/7
+          </p>
+      
+          <a class="action" href="#">
+            LOCATE
+            <span aria-hidden="true">
+              →
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <div id="about">
+        <a href="#categories" id="categories">About Us</a>
+        <ul class="navigation">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Service.html">Services</a></li>
+          <li><a href="Products.html">Products</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
