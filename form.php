@@ -1,7 +1,7 @@
 <?php
-$servername = "127.0.0.1";
+$servername = "127.0.0.169";
 $username = "root";
-$password = "Smitesh@11";
+$password = "12345678";
 $database = "chargeup_db";
 
 // Create connection
@@ -13,9 +13,9 @@ if ($conn->connect_error) {
 }
 
 // Get form data
-$country = $_POST['country'];
+$country = $_POST['Country'];
 $state = $_POST['State'];
-$city = $_POST['city'];
+$city = $_POST['City'];
 
 // Insert data into the database
 $sql = "INSERT INTO user_data (country, state, city) VALUES ('$country', '$state', '$city')";
